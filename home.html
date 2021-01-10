@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Town's Grocery Store</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fashion.css">
+  <link rel="stylesheet" href="title.css">
+  <!-- <link rel="stylesheet" href="home.css"> -->
+  <!-- <link rel="stylesheet" href="assessories.css"> -->
+</head>
+
+<body>
+  <header>
+        <div class="container-fluid">
+          
+      <div class="row top-bar">
+        <div class="col-lg-6 col-md-8 col-12 logo " id="logo-part" data-aos="zoom-in">
+          <a class="navbar-brand" href="#"><img src="images/lg.PNG" alt=""></a>
+          <div class="tagline">
+            <p >Your Neighbor's Grocery Store!</p>
+          </div>
+          <!-- <form>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </form> -->
+        </div>
+        <div class="col-lg-6 col-md-4 col-12 cart">
+          <div><i class="fas fa-shopping-cart"></i><span>CART</span></div>
+          <div><i class="fas fa-heart"></i><span>Favourites</span> </div>
+          <div> <i class="fas fa-user" onclick="openForm()"></i><span>Login</span> </div>
+          <!-- <div id="menu-icon"><i class="fas fa-bars" onclick="openMenu()"></i></div> -->
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- --------------------------------NAVBAR STARTS----------------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- <a class="navbar-brand" href="#">
+        <h4>
+            <span>T</span>
+            <span>o</span>
+            <span>w</span>
+            <span>n's</span>
+            <span>G</span>
+            <span>r</span>
+            <span>o</span>
+            <span>c</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h4></a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Food
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="vegetables/vegetables.html">Vegetables</a>
+              <a class="dropdown-item" href="Fruits/fruits.html">Fruits</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Fashion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="gents.html">Gents Corner</a>
+              <a class="dropdown-item" href="ladies.html">Ladies Corner</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Electronics
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="homeGadgets/homeGadgets.html">Home Gadgets</a>
+              <a class="dropdown-item" href="Smartgadgets/smartGadgets.html">Smart Gadgets</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Accessories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="jewellery.html">Jwellery</a>
+              <a class="dropdown-item" href="handbags.html">Handbags</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </form>
+      </div>
+    </nav>
+   
+  </header>
+
+  <!-- ----------------------------FORM STARTS-------------------------------------- -->
+
+  <!-- <div class="form-bg">
+        <div class="container">
+            <div class="form-box">
+                <i class="fas fa-window-close" onclick="closeForm()"></i>
+
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                    <button type="button" class="toggle-btn" onclick="signUp()">Sign In</button>
+                </div>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <form action="" class="input-group" id="login">
+                    <input type="text" class="input-field" placeholder="Username" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <input type="checkbox" class="check-box" placeholder="Password" required> <span>Remember password</span>
+                    <button type="submit" id="submit-btn">Login</button>
+                </form>
+    
+                <form action="" class="input-group" id="sign-up">
+                    <input type="text" class="input-field" placeholder="Username" required>
+                    <input type="email" class="input-field" placeholder="Email" required>
+                    <input type="password" class="input-field" placeholder="Password" required>
+                    <input type="password" class="input-field" placeholder="Confirm Password" required>
+                    <input type="checkbox" class="check-box" required> <span>I agree to terms</span>
+                    <button type="submit" id="submit-btn">Sign Up</button>
+                </form>
+            </div>
+            
+        </div>
+    
+      </div> -->
+
+  <!-- ----------------------------FORM ENDS----------------------------------------- -->
+
+  <!-- -----------------------------------------------------------CAROUSEL--------------------------------------------------- -->
+  <main id="home">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="imgs/carousel1.jpg" class="d-block w-100" alt="...">
+         
+        </div>
+        <div class="carousel-item">
+          <img src="imgs/carousel4.jpg" class="d-block w-100" alt="...">
+         
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn6.dissolve.com/p/D1062_20_204/D1062_20_204_1200.jpg" class="d-block w-100" alt="...">
+          
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- -----------------------------SHORTCUTS STARTS-------------------------- -->
+  <section class="shortcuts">
+    <div class="container-fluid">
+      <div class="row box-container " data-aos="fade-right"data-aos-anchor-placement="bottom-bottom">
+        <div class="col-lg-3 col-md-3 col-8 my-2 mx-auto">
+          
+            <div class="boxes box1">
+              <i class="fas fa-shuttle-van fa-2x"></i>
+                        <p>DELIVERY
+                          <br> OVER KARACHI</p>
+          </div>
+        </div>
+         <div class="col-lg-3 col-md-3 col-8 my-2 mx-auto">
+          <div class="boxes box2">
+            <i class="fas fa-phone"></i>
+            <p>HELPLINE <br>
+                03-111-555-299</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-8 my-2 mx-auto">
+          <div class="boxes box3">
+            <i class="fas fa-dollar-sign fa-2x"></i>
+             <p>GUARANTED  <br> FRESHNESS</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-8 my-2 mx-auto">
+          <div class="boxes box4">
+            <i class="fas fa-briefcase fa-2x"></i>
+                        <p>3 HOUR <br> RETURN POLICY</p>
+          </div>
+        </div> 
+
+      </div>
+    </div>
+  </section>
+  <!-- -----------------------------SHORTCUTS ENDS-------------------------- -->
+
+  <!-- -----------------TOP CATOGORIES STARTS----------------------------- -->
+  <section class="grocery">
+          
+    <div class="container-fluid" data-aos="zoom-in">
+        <div class="grocery-heading">
+          <h2 class="my-4">Top Categories</h2>
+
+        </div>
+      
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-6">
+          <div class="card"><a href="top categories/veg.html"><img src="imgs/sabzi.jpg" alt=""></a>
+          <div class="card-title text-center"><p>SABZI</p></div></div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <div class="card"><a href="top categories/fruits.html"><img src="imgs/fruit.jpg" alt=""></a>
+          <div class="card-title text-center"><p>FRUITS</p></div></div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <div class="card"><a href="top categories/rice.html"><img src="imgs/sugar.jpg" alt=""></a>
+          <div class="card-title text-center"><p>RICE/SUGAR</p></div></div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <div class="card"><a href="top categories/pasta.html"><img src="imgs/noodles.jpg" alt=""></a>
+          <div class="card-title text-center"><p>PASTA/NOODLES</p></div></div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <div class="card"><a href="top categories/tea.html"><img src="imgs/coffee.png" alt=""></a>
+          <div class="card-title text-center"><p>TEA/COFFEE</p></div></div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-6">
+          <div class="card"><a href="top categories/dairy.html"><img src="imgs/paneer.jpg" alt=""></a>
+          <div class="card-title text-center"><p>DAIRY</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- -----------------TOP CATOGORIES ENDS----------------------------- -->
+
+<!-- -----------------------------------FOOD STARTS-------------------------------- -->
+  <section id="food" class="food-section" >
+       <div class="container" data-aos="fade-left">
+        <h1 class="product-heading">FOOD </h1>
+      <!-- 2 cards -->
+      <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+          <div class="card">
+            <img
+              src="imgs/1.jpg"
+              class="card-img-top"
+              alt="..."
+              height="400"
+            />
+            <a href="vegetables/vegetables.html">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-center">Vegetables</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div class="card">
+            <img src="imgs/2.jpg" class="card-img-top" alt="..." 
+            height="400px">
+            <a href="fruits/fruits.html">
+              <div class="card-img-overlay">
+                <h5 class="card-title text-center">Fruits</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- 2 cards end-->
+    </div>
+  </section>
+
+<!-- -----------------------------------FOOD ENDS-------------------------------- -->
+
+
+  <!-- -------------------------------------------ELECTRONICS STARTS---------------------------------/ -->
+  <section class="container" id="electronics" data-aos="fade-left">
+    <h1 class="product-heading">Gadgets</h1>
+    <div class="index-caption">
+
+      <p>
+        Our products are inspired by the people and world around us. Beautiful, high quality goods that
+        are designed especially for you. Discover our story and meet the people that make our brand what it is.
+      </p>
+    </div>
+    <!-- 4 cards -->
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4">
+        <div class="card">
+          <img src="images/smart.jpg" class="card-img-top" alt="..." onclick="Gents()" .... />
+          <div class="card-img-overlay">
+            <a class="card-title text-center" href="Smartgadgets/smartGadgets.html">Smart Gadgets</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="images/homeG2.PNG" class="card-img-top" alt="..." />
+          <div class="card-img-overlay">
+            <a class="card-title text-center" href="homeGadgets/homeGadgets.html">Home Gadgets</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4 cards end-->
+  </section>
+
+  <!-- -------------------------------------------ELECTRONICS ENDS---------------------------------/ -->
+  <!-- -------------------------------------------ASSESSORIES STARTS---------------------------------/ -->
+
+
+  <section class="container" id="assesories" data-aos="fade-left">
+    <h1 class="product-heading">Assessories</h1>
+
+    <div class="index-caption">
+
+      <p>
+        Our products are inspired by the people and world around us. Beautiful, high quality goods that
+        are designed especially for you. Discover our story and meet the people that make our brand what it is.
+      </p>
+    </div>
+    <div class="row categories">
+      <!-- <div class="row" id="categories"></div> -->
+
+      <div class="col mb-4">
+        <div class="card">
+          <img src="images/handbags.jpg" class="card-img-top" alt="..." onclick="Gents()" .... />
+          <div class="card-img-overlay">
+            <a class="card-title text-center" href="handbags.html">Handbags</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="images/jewellery.jpeg" class="card-img-top" alt="..." />
+          <div class="card-img-overlay">
+            <a class="card-title text-center" href="jewellery.html">Jwellery</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4 cards end-->
+  </section>
+
+
+
+  <!-- -------------------------------------------ASSESSORIES ENDS---------------------------------/ -->
+
+
+  <!-- -------------------FASHION STARTS---------------------- -->
+
+  <section class="container" id="fashion"data-aos="fade-left">
+    <h1 class="product-heading">Fashion</h1>
+    <div class="index-caption">
+      <p>
+        Our products are inspired by the people and world around us. Beautiful, high quality goods that
+        are designed especially for you. Discover our story and meet the people that make our brand what it is.
+      </p>
+    </div>
+    <!-- 4 cards -->
+    <div class="row row-cols-1 row-cols-md-2">
+      <div class="col mb-4">
+        <div class="card">
+          <img src="images/gents-fashion.jpeg" class="card-img-top" alt="..." onclick="Gents()" .... />
+          <div class="card-img-overlay">
+            <a class="card-title text-center" href="gents.html">Gents</a>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <img src="images/ladies-fashion.jpg" class="card-img-top" alt="..." />
+          <div class="card-img-overlay">
+            <a class="card-title text-center" href="ladies.html">Ladies</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4 cards end-->
+  </section>
+
+  <!-- -------------------FASHION ENDS---------------------- -->
+
+
+
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="about-us">
+            <h3>About Town's Grocery</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsa adipisci, deleniti neque saepe beatae
+              veniam dolore accusamus aspernatur qui!</p>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <div class="social-media-links">
+            <h3>Quick Links</h3>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cosmetics</a></li>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Electronics</a></li>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 mx-auto">
+          <div class="social-media-icons">
+            <h3>Connect</h3>
+            <span><i class="fab fa-facebook-square"></i></span>
+            <span><i class="fab fa-instagram-square"></i></span>
+            <span><i class="fab fa-linkedin"></i></span>
+            <span><i class="fab fa-whatsapp-square"></i></span>
+
+          </div>
+          <div class="newsletter">
+            <h4>Newsletter</h4>
+            <input type="email" placeholder="Email"> <button type="submit">Send</button>
+          </div>
+        </div>
+        <p class="mx-auto">Copyrights &copy 2020 reserved to Team Kalam, Tech Karo</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script/script.js"></script>
+  <script src="script/electronics.js"></script>
+  <!-- <script src="JSON.js"></script> -->
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>

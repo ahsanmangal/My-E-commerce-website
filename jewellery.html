@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>Jewellery</title>
+    <!-- <link rel="stylesheet" href="css/jwellery.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/extra-styling.css">
+    <link rel="stylesheet" href="css/style.css" >
+
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+          
+      <div class="row top-bar">
+        <div class="col-lg-6 col-md-8 col-12 logo " id="logo-part">
+          <a class="navbar-brand" href="#"><img src="images/lg.png" alt=""></a>
+          <div class="tagline">
+            <p>Your Neighbor's Grocery Store!</p>
+          </div>
+          <!-- <form>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </form> -->
+        </div>
+        <div class="col-lg-6 col-md-4 col-12 cart">
+          <div><i class="fas fa-shopping-cart"></i><span>CART</span></div>
+          <div><i class="fas fa-heart"></i><span>Favourites</span> </div>
+          <div> <i class="fas fa-user" onclick="openForm()"></i><span>Login</span> </div>
+          <!-- <div id="menu-icon"><i class="fas fa-bars" onclick="openMenu()"></i></div> -->
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- --------------------------------NAVBAR STARTS----------------------------------- -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Food
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="vegetables/vegetables.html">Vegetables</a>
+              <a class="dropdown-item" href="Fruits/fruits.html">Fruits</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Fashion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="gents.html">Gents Corner</a>
+              <a class="dropdown-item" href="ladies.html">Ladies Corner</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Electronics
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="homeGadgets/homeGadgets.html">Home Gadgets</a>
+              <a class="dropdown-item" href="Smartgadgets/smartGadgets.html">Smart Gadgets</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Accessories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="jewellery.html">Jwellery</a>
+              <a class="dropdown-item" href="handbags.html">Handbags</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </form>
+      </div>
+    </nav>
+   
+  </header>
+    <section class="container-fluid jwellery text-center mx-auto vegetables">
+     
+        <div class="row mx-auto p-container">
+            <div class="col-lg-3 col-md-6 col-12 card">
+                <div class="product-top">
+                    <img src="jewellery/2.jpg" >
+                    <div class="overlay text-center ">
+                        <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WhishList"><i
+                                class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>FURLA 1927</h3>
+                    <h5>$398.00</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 card">
+                <div class="product-top">
+                    <img src="jewellery/3.jpg" >
+                    <div class="overlay text-center">
+                        <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WhishList"><i
+                                class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>FURLA 1927</h3>
+                    <h5>$398.00</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 card">
+                <div class="product-top">
+                    <img src="jewellery/1.jpg" >
+                    <div class="overlay text-center">
+                        <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WhishList"><i
+                                class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>FURLA 1927</h3>
+                    <h5>$398.00</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 card">
+                <div class="product-top">
+                    <img src="jewellery/4.jpg" >
+                    <div class="overlay text-center">
+                        <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WhishList"><i
+                                class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>FURLA 1927</h3>
+                    <h5>$398.00</h5>
+                </div>
+            </div>
+        </div>
+        <!---End Row--->
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 card">
+                <div class="product-top">
+                    <img src="jewellery/5.jpg" >
+                    <div class="overlay text-center">
+                        <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WhishList"><i
+                                class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>FURLA 1927</h3>
+                    <h5>$398.00</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 card">
+                <div class="product-top">
+                    <img src="jewellery/6.jpg" >
+                    <div class="overlay text-center">
+                        <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WhishList"><i
+                                class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>FURLA 1927</h3>
+                    <h5>$398.00</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 card">
+                <div class="product-top">
+                    <img src="jewellery/7.jpg" >
+                    <div class="overlay text-center">
+                        <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WhishList"><i
+                                class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>FURLA 1927</h3>
+                    <h5>$398.00</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 card">
+                <div class="product-top">
+                    <img src="jewellery/8.jpg" >
+                    <div class="overlay text-center">
+                        <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WhishList"><i
+                                class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>FURLA 1927</h3>
+                    <h5>$398.00</h5>
+                </div>
+            </div>
+        </div>
+        <!---End Row--->
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 card">
+                <div class="product-top">
+                    <img src="jewellery/9.jpg" >
+                    <div class="overlay text-center">
+                        <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WhishList"><i
+                                class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>FURLA 1927</h3>
+                    <h5>$398.00</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 card">
+                <div class="product-top">
+                    <img src="jewellery/10.jpg" >
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WhishList"><i
+                                class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>FURLA 1927</h3>
+                    <h5>$398.00</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 card">
+                <div class="product-top">
+                    <img src="jewellery/11.jpg" >
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WhishList"><i
+                                class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>FURLA 1927</h3>
+                    <h5>$398.00</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 card">
+                <div class="product-top">
+                    <img src="jewellery/12.jpg" >
+                    <div class="overlay">
+                        <button type="button" class="btn btn-secondary" title="Quick shop"><i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to WhishList"><i
+                                class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-secondary" title="Add to Cart"><i
+                                class="fa fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-bottom text-center">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <h3>FURLA 1927</h3>
+                    <h5>$398.00</h5>
+                </div>
+            </div>
+        </div>
+        <!---End Row--->
+    </section>
+    <!---End Container--->
+
+    <footer>
+        <div class="container">
+         <div class="row">
+             <div class="col-lg-4 col-md-6 col-12">
+                 <div class="about-us">
+                     <h3>About Town's Grocery</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsa adipisci, deleniti neque saepe beatae veniam dolore accusamus aspernatur qui!</p>
+                
+                 </div>
+             </div>
+             <div class="col-lg-4 col-md-6 col-12">
+                 <div class="social-media-links">
+                     <h3>Quick Links</h3>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Cosmetics</a></li>
+                     <li><a href="#">Food</a></li>
+                     <li><a href="#">Fashion</a></li>
+                     <li><a href="#">Electronics</a></li>
+                 </div>
+             </div>
+             <div class="col-lg-4 col-md-4 col-12 mx-auto">
+                 <div class="social-media-icons">
+                     <h3>Connect</h3>
+                     <span><i class="fab fa-facebook-square"></i></span>
+                     <span><i class="fab fa-instagram-square"></i></span>
+                     <span><i class="fab fa-linkedin"></i></span>
+                     <span><i class="fab fa-whatsapp-square"></i></span>
+                    
+                 </div>
+                 <div class="newsletter">
+                     <h4>Newsletter</h4>
+                    <input type="email"placeholder="Email"> <button type="submit">Send</button>
+                 </div>
+          </div>
+          <p class="mx-auto">Copyrights &copy 2020 reserved to Team Kalam, Tech Karo</p> 
+        </div>          
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

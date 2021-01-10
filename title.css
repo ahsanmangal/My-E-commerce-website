@@ -1,0 +1,59 @@
+
+.navbar h4{
+    /* background: teal; */
+    display: table-cell;
+    /* font-size: 5rem; */
+    color: white;
+}
+.navbar h4 span{
+    animation: animate 3s linear infinite;
+}
+.navbar h4 span:nth-child(1){
+    animation-delay: 0s;
+}
+.navbar h4 span:nth-child(2){
+    animation-delay: 0.25s;
+}
+.navbar h4 span:nth-child(3){
+    animation-delay: 0.5s;
+}
+.navbar h4 span:nth-child(4){
+    animation-delay: 0.75s;
+}
+.navbar h4 span:nth-child(5){
+    animation-delay: 1s;
+}
+.navbar h4 span:nth-child(6){
+    animation-delay: 1.25s;
+}
+.navbar h4 span:nth-child(7){
+    animation-delay: 1.50s;
+}
+.navbar h4 span:nth-child(8){
+    animation-delay: 1.75s;
+}
+.navbar h4 span:nth-child(9){
+    animation-delay: 2s;
+}
+.navbar h4 span:nth-child(10){
+    animation-delay: 2.25s;
+}
+@keyframes animate{
+    0%, 100%{
+        color: #0DB39E;;
+        filter: blur(2px);
+        /* text-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 300px #00b3ff,
+                    0 0 400px #00b3ff; */
+
+    }
+    5%, 95%{
+        color: white;
+        filter: blur(0px);
+    }
+}
